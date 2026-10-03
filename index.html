@@ -1,40 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>GigogFlix - Nonton Gratis</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{background:#000;color:#fff;font-family:Arial;margin:0}
-.header{background:#111;padding:15px;text-align:center;position:sticky;top:0}
-.logo{color:#e50914;font-size:32px;font-weight:bold;letter-spacing:1px}
-.hero{text-align:center;padding:30px 20px}
-.hero h1{color:#e50914;font-size:42px;margin:0}
-.hero p{color:#aaa;margin:10px 0 20px}
-.btn{background:#e50914;color:#fff;padding:12px 30px;border:none;border-radius:5px;font-size:16px}
-.movies{padding:15px;display:grid;grid-template-columns:1fr 1fr;gap:15px}
-.movie{background:#1a1a1a;border-radius:12px;overflow:hidden}
-.movie img{width:100%;height:200px;object-fit:cover}
-.movie h3{font-size:14px;margin:10px 5px 5px}
-.movie p{font-size:11px;color:#888;margin:0 5px 10px}
-.movie button{width:90%;background:#e50914;color:#fff;border:none;padding:8px;border-radius:5px;margin:0 5% 10px;font-weight:bold}
-.footer{text-align:center;padding:30px;color:#555;font-size:11px;margin-top:20px}
-</style>
-</head>
-<body>
-<div class="header"><div class="logo">GIGOGFLIX</div></div>
-<div class="hero">
-<h1>Nonton Gratis</h1>
-<p>Film Bioskop Terbaru - Tanpa Iklan</p>
-<button class="btn" onclick="alert('Pilih film di bawah Bos!')">🔥 Mulai Nonton</button>
-</div>
-<div class="movies">
-<div class="movie"><img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500"><h3>Avengers Endgame</h3><p>Action • 2019</p><button onclick="window.open('https://www.youtube.com/results?search_query=Avengers+Endgame+full+movie','_blank')">▶ Nonton</button></div>
-<div class="movie"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=500"><h3>John Wick 4</h3><p>Action • 2023</p><button onclick="window.open('https://www.youtube.com/results?search_query=John+Wick+4+full+movie','_blank')">▶ Nonton</button></div>
-<div class="movie"><img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=500"><h3>Spider-Man</h3><p>Action • 2023</p><button onclick="window.open('https://www.youtube.com/results?search_query=Spider-Man+full+movie','_blank')">▶ Nonton</button></div>
-<div class="movie"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500"><h3>The Batman</h3><p>Action • 2022</p><button onclick="window.open('https://www.youtube.com/results?search_query=The+Batman+full+movie','_blank')">▶ Nonton</button></div>
-<div class="movie"><img src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=500"><h3>Top Gun</h3><p>Action • 2022</p><button onclick="window.open('https://www.youtube.com/results?search_query=Top+Gun+Maverick+full+movie','_blank')">▶ Nonton</button></div>
-<div class="movie"><img src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?w=500"><h3>Fast X</h3><p>Action • 2023</p><button onclick="window.open('https://www.youtube.com/results?search_query=Fast+X+full+movie','_blank')">▶ Nonton</button></div>
-</div>
-<div class="footer">© 2026 GigogFlix - by iis-gigog<br>Nonton Sepuasnya Gratis</div>
-</body>
-  </html>
+<!DOCTYPE html><html><head><title>GigogFlix - Nonton Gratis</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{background:#000;color:#fff;font-family:Arial;margin:0}.header{background:#111;padding:15px;text-align:center;position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:12px 15px}.logo{font-size:28px;font-weight:900;background:linear-gradient(90deg,#FFD700,#FFA500);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.search{padding:8px 12px;border-radius:20px;border:none;background:#222;color:#fff;width:120px}.hero{text-align:center;padding:20px}.hero h1{color:#e50914;font-size:36px;margin:0}.hero p{color:#888;font-size:13px}.btn{background:#e50914;color:#fff;padding:10px 25px;border:none;border-radius:5px;margin-top:10px}.cats{display:flex;gap:8px;overflow:auto;padding:10px 15px}.cats button{background:#222;color:#fff;border:none;padding:6px 14px;border-radius:20px;font-size:12px;white-space:nowrap}.cats button.active{background:#e50914}.movies{padding:15px;display:grid;grid-template-columns:1fr 1fr;gap:12px}.movie{background:#1a1a1a;border-radius:10px;overflow:hidden;position:relative}.movie img{width:100%;height:180px;object-fit:cover}.movie h3{font-size:12px;margin:8px 5px 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.movie p{font-size:10px;color:#888;margin:0 5px 8px}.movie button{width:92%;background:#e50914;color:#fff;border:none;padding:7px;border-radius:5px;margin:0 4% 8px;font-size:12px;font-weight:bold}#player{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#000;z-index:99;padding:0}#player iframe{width:100%;height:75%;margin-top:50px}#player .close{position:absolute;top:10px;right:15px;background:#e50914;color:#fff;border:none;padding:8px 15px;border-radius:5px;z-index:100}.footer{text-align:center;padding:25px;color:#555;font-size:11px}</style></head><body>
+<div class="header"><div class="logo">GIGOGFLIX</div><input id="search" class="search" placeholder="Cari film..." onkeyup="filterFilms()"></div>
+<div class="hero"><h1>Nonton Gratis</h1><p>Film Bioskop Terbaru - Tanpa Iklan - by gigog</p></div>
+<div class="cats"><button class="active" onclick="filterCat('all',this)">Semua</button><button onclick="filterCat('Action',this)">Action</button><button onclick="filterCat('Horror',this)">Horror</button><button onclick="filterCat('Comedy',this)">Comedy</button><button onclick="filterCat('Drama',this)">Drama</button></div>
+<div class="movies" id="movies"></div>
+<div id="player"><button class="close" onclick="closePlayer()">✕ Tutup</button><iframe id="frame" src="" frameborder="0" allowfullscreen></iframe><div style="padding:15px"><h2 id="ptitle" style="margin:0;font-size:18px"></h2><p id="pdesc" style="color:#888;font-size:12px"></p></div></div>
+<div class="footer">© 2026 GigogFlix - by gigog<br>Nonton Sepuasnya Gratis</div>
+<script>
+let films=[
+{name:"Avengers Endgame",cat:"Action",year:"2019",img:"https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500",id:"TcMBFSGVi1c"},
+{name:"John Wick 4",cat:"Action",year:"2023",img:"https://images.unsplash.com/photo-1485846234645-a62644f84728?w=500",id:"qEVU3r4dH1E"},
+{name:"Spider-Man No Way Home",cat:"Action",year:"2023",img:"https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=500",id:"JfVOs4VSpmA"},
+{name:"The Batman",cat:"Action",year:"2022",img:"https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500",id:"mqqft2x_Aa4"},
+{name:"Top Gun Maverick",cat:"Action",year:"2022",img:"https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=500",id:"giXcoLahAF0"},
+{name:"Fast X",cat:"Action",year:"2023",img:"https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?w=500",id:"eoOguSVDv8I"},
+{name:"KKN Desa Penari",cat:"Horror",year:"2022",img:"https://images.unsplash.com/photo-1509248961158-e32f69343b0c?w=500",id:"2iD2v1a2v1c"},
+{name:"Pengabdi Setan 2",cat:"Horror",year:"2022",img:"https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=500",id:"3iD2v1a2v1d"},
+{name:"The Conjuring",cat:"Horror",year:"2021",img:"https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500",id:"k10ETZ41q5o"},
+{name:"Sewu Dino",cat:"Horror",year:"2023",img:"https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=500",id:"4iD2v1a2v1e"},
+{name:"Agak Laen",cat:"Comedy",year:"2024",img:"https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500",id:"5iD2v1a2v1f"},
+{name:"Warkop DKI",cat:"Comedy",year:"2023",img:"https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=500",id:"6iD2v1a2v1g"},
+{name:"Miracles From Heaven",cat:"Drama",year:"2023",img:"https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=500",id:"7iD2v1a2v1h"},
+{name:"Dilan 1990",cat:"Drama",year:"2018",img:"https://images.unsplash.com/photo-1494972688394-4cc796f9e4c5?w=500",id:"8iD2v1a2v1i"},
+{name:"Aquaman 2",cat:"Action",year:"2023",img:"https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500",id:"FJ3o8A2v1a1"},
+{name:"Oppenheimer",cat:"Drama",year:"2023",img:"https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=500",id:"uYPbbksJxIg"},
+{name:"The Nun 2",cat:"Horror",year:"2023",img:"https://images.unsplash.com/photo-1505631952117-c555d0d7e09a?w=500",id:"QF-oyCwaAr0"},
+{name:"Toy Story 5",cat:"Comedy",year:"2024",img:"https://images.unsplash.com/photo-1596727147705-61a532a659bd?w=500",id:"9iD2v1a2v1j"},
+{name:"Avatar 2",cat:"Action",year:"2022",img:"https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500",id:"d9MyW72ELq0"},
+{name:"Inside Out 2",cat:"Comedy",year:"2024",img:"https://images.unsplash.com/photo-1560167016-022b78a0258e?w=500",id:"LEjhY15eCx0"}
+];
+let curCat='all';
+function render(list){document.getElementById('movies').innerHTML=list.map(f=>`<div class="movie"><img src="${f.img}"><h3>${f.name}</h3><p>${f.cat} • ${f.year}</p><button onclick="play('${f.id}','${f.name}','${f.cat} • ${f.year}')">▶ Nonton</button></div>`).join('')}
+function play(id,title,desc){document.getElementById('frame').src='https://www.youtube.com/embed/'+id+'?autoplay=1';document.getElementById('ptitle').innerText=title;document.getElementById('pdesc').innerText=desc;document.getElementById('player').style.display='block'}
+function closePlayer(){document.getElementById('player').style.display='none';document.getElementById('frame').src=''}
+function filterCat(c,el){curCat=c;document.querySelectorAll('.cats button').forEach(b=>b.classList.remove('active'));el.classList.add('active');apply()}
+function filterFilms(){apply()}
+function apply(){let q=document.getElementById('search').value.toLowerCase();let f=films.filter(x=>(curCat=='all'||x.cat==curCat)&&x.name.toLowerCase().includes(q));render(f)}
+render(films);
+</script></body></html>
